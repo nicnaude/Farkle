@@ -10,4 +10,10 @@
 
 @interface DieLabel : UILabel
 
+@property UILabel *Die;
+
+@property NSString *dieLabelText;
+
+@property CGRect dieBounds;
+
 @end

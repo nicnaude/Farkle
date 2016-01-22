@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		4A0883451C519BBB00DB9264 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0883441C519BBB00DB9264 /* main.m */; };
 		4A0883481C519BBB00DB9264 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0883471C519BBB00DB9264 /* AppDelegate.m */; };
-		4A08834B1C519BBB00DB9264 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A08834A1C519BBB00DB9264 /* ViewController.m */; };
 		4A08834E1C519BBB00DB9264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A08834C1C519BBB00DB9264 /* Main.storyboard */; };
 		4A0883501C519BBB00DB9264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A08834F1C519BBB00DB9264 /* Assets.xcassets */; };
 		4A0883531C519BBB00DB9264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A0883511C519BBB00DB9264 /* LaunchScreen.storyboard */; };
+		4A08835C1C519BEA00DB9264 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A08835B1C519BEA00DB9264 /* GameViewController.m */; };
+		4A08835F1C519C1C00DB9264 /* DieLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A08835E1C519C1C00DB9264 /* DieLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		4A0883441C519BBB00DB9264 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4A0883461C519BBB00DB9264 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4A0883471C519BBB00DB9264 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4A0883491C519BBB00DB9264 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4A08834A1C519BBB00DB9264 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4A08834D1C519BBB00DB9264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A08834F1C519BBB00DB9264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A0883521C519BBB00DB9264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A0883541C519BBB00DB9264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A08835A1C519BEA00DB9264 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		4A08835B1C519BEA00DB9264 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		4A08835D1C519C1C00DB9264 /* DieLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DieLabel.h; sourceTree = "<group>"; };
+		4A08835E1C519C1C00DB9264 /* DieLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DieLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +61,11 @@
 		4A0883421C519BBB00DB9264 /* Farkle */ = {
 			isa = PBXGroup;
 			children = (
-				4A0883461C519BBB00DB9264 /* AppDelegate.h */,
-				4A0883471C519BBB00DB9264 /* AppDelegate.m */,
-				4A0883491C519BBB00DB9264 /* ViewController.h */,
-				4A08834A1C519BBB00DB9264 /* ViewController.m */,
 				4A08834C1C519BBB00DB9264 /* Main.storyboard */,
+				4A08835A1C519BEA00DB9264 /* GameViewController.h */,
+				4A08835B1C519BEA00DB9264 /* GameViewController.m */,
+				4A08835D1C519C1C00DB9264 /* DieLabel.h */,
+				4A08835E1C519C1C00DB9264 /* DieLabel.m */,
 				4A08834F1C519BBB00DB9264 /* Assets.xcassets */,
 				4A0883511C519BBB00DB9264 /* LaunchScreen.storyboard */,
 				4A0883541C519BBB00DB9264 /* Info.plist */,
@@ -74,6 +77,8 @@
 		4A0883431C519BBB00DB9264 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4A0883461C519BBB00DB9264 /* AppDelegate.h */,
+				4A0883471C519BBB00DB9264 /* AppDelegate.m */,
 				4A0883441C519BBB00DB9264 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -150,9 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A08834B1C519BBB00DB9264 /* ViewController.m in Sources */,
 				4A0883481C519BBB00DB9264 /* AppDelegate.m in Sources */,
+				4A08835C1C519BEA00DB9264 /* GameViewController.m in Sources */,
 				4A0883451C519BBB00DB9264 /* main.m in Sources */,
+				4A08835F1C519C1C00DB9264 /* DieLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

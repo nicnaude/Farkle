@@ -8,14 +8,25 @@
 
 #import "DieLabel.h"
 
+@interface DieLabel () <UIGestureRecognizerDelegate>
+
+@end
+
 @implementation DieLabel
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+-(instancetype) initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    UITapGestureRecognizer *didTouch = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTouch:)];
+    didTouch.delegate = self;
+    
+    self.gestureRecognizers = @[didTouch];
+    
+    // Wouldn't it be nice if we could drag and drop the die you want to keep into a "bank cup"?
+    return self;
 }
-*/
+
+-(void) handleTouch :(UITapGestureRecognizer *)gestureRecognizer {
+    NSLog(@"Hello");
+}
 
 @end
