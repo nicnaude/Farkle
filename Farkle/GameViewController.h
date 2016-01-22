@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GameViewController.h
 //  Farkle
 //
 //  Created by Nicholas Naudé on 21/01/2016.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface GameViewController : UIViewController
 
 @end
-
